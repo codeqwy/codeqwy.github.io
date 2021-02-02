@@ -6,16 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://codeqwy.gitee.io">
-  <title>Tag: swap | QWYBlog</title>
+  <title>Hexo搭建个人博客（1） | QWYBlog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="QWYBlog">
-<meta property="og:url" content="http://codeqwy.gitee.io/tags/swap/index.html">
+  <meta name="description" content="说明：使用Hexo框架搭建一个简单的个人博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo搭建个人博客（1）">
+<meta property="og:url" content="http://codeqwy.gitee.io/2020/12/09/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%881%EF%BC%89/index.html">
 <meta property="og:site_name" content="QWYBlog">
+<meta property="og:description" content="说明：使用Hexo框架搭建一个简单的个人博客">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-09T15:14:02.000Z">
+<meta property="article:modified_time" content="2020-12-09T15:20:01.583Z">
 <meta property="article:author" content="CodeQWY">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="QWYBlog" type="application/atom+xml">
@@ -169,65 +174,280 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Hexo搭建个人博客（1）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/29/%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E6%95%B4%E6%95%B0%E7%9A%84%E5%80%BC/" class="archive-article-date">
-        <time datetime="2020-11-29T04:21:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-29</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/29/%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E6%95%B4%E6%95%B0%E7%9A%84%E5%80%BC/" target="_blank">交换两个整数的值</a>
   
+    <h1 class="article-title" itemprop="name">
+      Hexo搭建个人博客（1）
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2020/12/09/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%881%EF%BC%89/" class="archive-article-date">
+        <time datetime="2020-12-09T15:14:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-09</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">637字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">2分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p><strong>说明：</strong>使用Hexo框架搭建一个简单的个人博客</p>
+<a id="more"></a>
+
+<hr>
+<h2 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h2><ol>
+<li>需要在电脑上安装Node.js、Git</li>
+<li>此文章环境版本：<ul>
+<li>Node.js：v14.15.1</li>
+<li>Git：git version 2.29.2.windows.2</li>
+<li>Windows10</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="二、搭建个人博客"><a href="#二、搭建个人博客" class="headerlink" title="二、搭建个人博客"></a>二、搭建个人博客</h2><p>如果已安装 Node.js 和 Git，可以直接前往（3）安装 hexo 步骤。</p>
+<h3 id="（1）安装Node-js"><a href="#（1）安装Node-js" class="headerlink" title="（1）安装Node.js"></a>（1）安装Node.js</h3><p><strong>下载地址</strong>：<a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a>    中文网站：<a target="_blank" rel="noopener" href="http://nodejs.cn/">http://nodejs.cn/</a><br>安装完成后查看是否安装成功，在命令提示符下执行：<code>node -v</code>，如果能够显示版本，说明安装成功。<br>在安装Node.js时，会一起安装npm包管理工具，同样在命令行下执行：<code>npm -v</code>，能够显示版本号，说明安装成功。<br>因为npm在国内的下载速度比较慢，所以安装完成后最好切换一下镜像源，下载的速度会比较快。<br>安装淘宝镜像源，在命令行下执行此命令：<code>npm install -g cnpm --registry=http://registry.npm.taobao.org</code>，同样通过<code>cnpm -v</code>查看cnpm是否安装成功。</p>
+<hr>
+<h3 id="（2）安装Git"><a href="#（2）安装Git" class="headerlink" title="（2）安装Git"></a>（2）安装Git</h3><p><strong>下载地址</strong>：<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a><br>安装完成后同样查看是否安装成功，在命令行下执行：<code>git --version</code>，能够显示版本号，说明安装成功。</p>
+<hr>
+<h3 id="（3）安装Hexo"><a href="#（3）安装Hexo" class="headerlink" title="（3）安装Hexo"></a>（3）安装Hexo</h3><p>做好以上操作之后，开始安装hexo框架，在命令行下执行：<code>cnpm install -g hexo-cli</code>，执行成功后，查看hexo版本：<code>hexo -v</code>。接下来就可以通过hexo创建个人博客了。</p>
+<hr>
+<h3 id="（4）生成博客"><a href="#（4）生成博客" class="headerlink" title="（4）生成博客"></a>（4）生成博客</h3><p>首先，在某个磁盘下新建一个目录，例如HexoBlog，或者在命令行下执行：<code>mdkir HexoBlog</code>，然后在命令行下进入到HexoBlog目录。<br>然后执行：<code>hexo init</code>命令，生成和初始化博客。初始化完成后，会在HexoBlog生成相关的文件。<br>启动博客，执行：<code>hexo -s</code>，启动完成后，会生成一个链接（本地访问地址）：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> ，通过访问这个地址，可以访问刚创建的博客。</p>
+<hr>
+<h3 id="（5）创建一篇文章"><a href="#（5）创建一篇文章" class="headerlink" title="（5）创建一篇文章"></a>（5）创建一篇文章</h3><p>初始化完成博客后，我们就可以创建自己的第一篇文章。执行：<code>hexo n &quot;My First Blog Post&quot;</code>，就会在source/_posts目录下生成一个名叫<code>My First Blog Post.md</code>的文章，编辑文章。回到HexoBlog目录下，生成刚才编辑好的文章：先清理一下博客，执行 <code>hexo clean</code>，然后生成文章：<code>hexo -g</code>。重新启动博客，刷新访问地址，就可以看到刚才编写好的文章。<br>至此，一个简单的个人博客就搭建成功。</p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          CodeQWY
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://codeqwy.gitee.io/2020/12/09/Hexo搭建个人博客（1）/" title="Hexo搭建个人博客（1）" target="_blank">http://codeqwy.gitee.io/2020/12/09/Hexo搭建个人博客（1）/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://gitee.com/codeqwy/codeqwy/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">swap</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://codeqwy.gitee.io/2020/12/09/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%881%EF%BC%89/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2020/12/09/%EF%BC%885%EF%BC%89Git%E5%88%86%E6%94%AF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          （5）Git分支
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/12/04/%EF%BC%884%EF%BC%89Git%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">（4）Git基础</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87"><span class="toc-number">1.</span> <span class="toc-text">一、环境准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2"><span class="toc-number">2.</span> <span class="toc-text">二、搭建个人博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E5%AE%89%E8%A3%85Node-js"><span class="toc-number">2.1.</span> <span class="toc-text">（1）安装Node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E5%AE%89%E8%A3%85Git"><span class="toc-number">2.2.</span> <span class="toc-text">（2）安装Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E5%AE%89%E8%A3%85Hexo"><span class="toc-number">2.3.</span> <span class="toc-text">（3）安装Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2"><span class="toc-number">2.4.</span> <span class="toc-text">（4）生成博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%885%EF%BC%89%E5%88%9B%E5%BB%BA%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0"><span class="toc-number">2.5.</span> <span class="toc-text">（5）创建一篇文章</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
           </div>
@@ -268,9 +488,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,

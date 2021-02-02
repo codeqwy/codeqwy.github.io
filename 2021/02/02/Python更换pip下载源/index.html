@@ -6,16 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://codeqwy.gitee.io">
-  <title>Tag: swap | QWYBlog</title>
+  <title>Python更换pip下载源 | QWYBlog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="QWYBlog">
-<meta property="og:url" content="http://codeqwy.gitee.io/tags/swap/index.html">
+  <meta name="description" content="说明：更换pip下载源方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python更换pip下载源">
+<meta property="og:url" content="http://codeqwy.gitee.io/2021/02/02/Python%E6%9B%B4%E6%8D%A2pip%E4%B8%8B%E8%BD%BD%E6%BA%90/index.html">
 <meta property="og:site_name" content="QWYBlog">
+<meta property="og:description" content="说明：更换pip下载源方法">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-02-02T15:33:36.000Z">
+<meta property="article:modified_time" content="2021-02-02T15:36:06.964Z">
 <meta property="article:author" content="CodeQWY">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="pip">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="QWYBlog" type="application/atom+xml">
@@ -169,65 +175,279 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Python更换pip下载源" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/29/%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E6%95%B4%E6%95%B0%E7%9A%84%E5%80%BC/" class="archive-article-date">
-        <time datetime="2020-11-29T04:21:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-29</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/29/%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E6%95%B4%E6%95%B0%E7%9A%84%E5%80%BC/" target="_blank">交换两个整数的值</a>
   
+    <h1 class="article-title" itemprop="name">
+      Python更换pip下载源
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2021/02/02/Python%E6%9B%B4%E6%8D%A2pip%E4%B8%8B%E8%BD%BD%E6%BA%90/" class="archive-article-date">
+        <time datetime="2021-02-02T15:33:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-02</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">522字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">2分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p><strong>说明：</strong>更换pip下载源方法</p>
+<a id="more"></a>
+
+<hr>
+<blockquote>
+<p>以清华大学镜像源为例：<a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a><br>操作系统为：Windows10<br>python3.9版本</p>
+</blockquote>
+<h3 id="一、临时更换pip下载源"><a href="#一、临时更换pip下载源" class="headerlink" title="一、临时更换pip下载源"></a>一、临时更换pip下载源</h3><p>​    在命令提示符中使用pip安装或者更新模块时，临时指定下载源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pip install [module] -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 如果提示域名不被信任，则加上参数 --trusted-host  </span><br><span class="line">pip install [module] -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple --trusted-host pypi.tuna.tsinghua.edu.cn</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>-i</code>的意义：指定模块的下载源</li>
+<li><code>-U</code>的意义：<code>--upgrade</code>的缩写，更新已安装的模块到最新版本</li>
+</ul>
+<h3 id="二、长久更换pip下载源"><a href="#二、长久更换pip下载源" class="headerlink" title="二、长久更换pip下载源"></a>二、长久更换pip下载源</h3><p> 按<code>win+R</code>键，在打开的【运行】搜素框中输入<code>%APPDATA%</code>，系统自动打开对应路径，然后新建一个名为pip的文件夹，在该文件夹下新建pip.ini文件，输入以下内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">timeout &#x3D; 6000</span><br><span class="line">index-url &#x3D; https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple</span><br><span class="line">[install]</span><br><span class="line">trusted-host &#x3D; pypi.tuna.tsinghua.edu.cn</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>timeout</code>参数的意义：某些站点的下载速度很慢，容易出现下载失败超时的情况，设置timeout，可以改变pip的等待时间<br> 执行<code>pip help</code>有此提示：<code>--timeout &lt;sec&gt;   Set the socket timeout (default 15 seconds).</code></li>
+<li><code>index-url</code>参数的意义：设置pip默认下载源路径</li>
+<li><code>trusted-host</code>参数的意义：信任该域名<br>执行<code>pip help</code>有此提示：<code> --trusted-host &lt;hostname&gt;   Mark this host or host:port pair as trusted, even though it does not have valid or any HTTPS.</code></li>
+</ul>
+<hr>
+<h2 id="国内常用下载源"><a href="#国内常用下载源" class="headerlink" title="国内常用下载源"></a>国内常用下载源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">清华大学 https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple</span><br><span class="line">中国科学技术大学 http:&#x2F;&#x2F;pypi.mirrors.ustc.edu.cn&#x2F;simple</span><br><span class="line">阿里云 http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;pypi&#x2F;simple</span><br><span class="line">中国科技大学 https:&#x2F;&#x2F;pypi.mirrors.ustc.edu.cn&#x2F;simple</span><br><span class="line">豆瓣 (douban) http:&#x2F;&#x2F;pypi.douban.com&#x2F;simple</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="pip默认下载源"><a href="#pip默认下载源" class="headerlink" title="pip默认下载源"></a>pip默认下载源</h2><p><strong>pip默认下载源为</strong>：<a target="_blank" rel="noopener" href="https://pypi.org/simple">https://pypi.org/simple</a><br><strong>注</strong>：如果修改了pip默认下载源，而有的包或模块只有默认下载源有，可以临时指定默认下载源安装。安装命令：<code>pip install [module] -i https://pypi.org/simple</code>。</p>
+<hr>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          CodeQWY
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://codeqwy.gitee.io/2021/02/02/Python更换pip下载源/" title="Python更换pip下载源" target="_blank">http://codeqwy.gitee.io/2021/02/02/Python更换pip下载源/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://gitee.com/codeqwy/codeqwy/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">swap</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">pip</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://codeqwy.gitee.io/2021/02/02/Python%E6%9B%B4%E6%8D%A2pip%E4%B8%8B%E8%BD%BD%E6%BA%90/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/02/02/%E5%8D%95%E8%AF%8D%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">单词桌面壁纸</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%B4%E6%97%B6%E6%9B%B4%E6%8D%A2pip%E4%B8%8B%E8%BD%BD%E6%BA%90"><span class="toc-number">1.</span> <span class="toc-text">一、临时更换pip下载源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E9%95%BF%E4%B9%85%E6%9B%B4%E6%8D%A2pip%E4%B8%8B%E8%BD%BD%E6%BA%90"><span class="toc-number">2.</span> <span class="toc-text">二、长久更换pip下载源</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BD%E5%86%85%E5%B8%B8%E7%94%A8%E4%B8%8B%E8%BD%BD%E6%BA%90"><span class="toc-number"></span> <span class="toc-text">国内常用下载源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pip%E9%BB%98%E8%AE%A4%E4%B8%8B%E8%BD%BD%E6%BA%90"><span class="toc-number"></span> <span class="toc-text">pip默认下载源</span></a>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
           </div>
@@ -268,9 +488,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
